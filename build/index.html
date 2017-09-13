@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link lang="de">
+        <title>AUTO</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./js/main.js"></script>
+    </head>
+    <body>
+<header>
+    <input type="button" id="back" value="Back">
+</header>
+    <canvas id="paint">
+
+    </canvas>
+        <div id="wrapper" class="wrapper">
+            <div id="sizeRect">
+                <div id="right-top"></div>
+                <div id="right"></div>
+                <div id="right-bottom"></div>
+                <div id="left-top"></div>
+                <div id="left"></div>
+                <div id="left-bottom"></div>
+                <div id="top"></div>
+                <div id="bottom"></div>
+            </div>
+        </div>
+        <aside class="active">
+
+            <button type="button" id="grad">
+                <img src="./img/border.png">
+            </button>
+
+            <button id="brush">
+                <img src="./img/brush.png" alt="">
+            </button>
+
+            <button id="toDoGrad">
+                <img src="./img/paint.png">
+            </button>
+
+            <button id="delete">
+                <img src="./img/delete.png">
+            </button>
+
+            <div class="picker " id="primary_block" tabindex="1">
+
+                <div id="line">
+                    <div id="arrows">
+                        <div class="left_arrow"></div>
+                        <div class="right_arrow"></div>
+                    </div>
+                </div>
+
+                <div id="block_picker">
+
+                    <img src="https://lh3.googleusercontent.com/-8Dm4nhAOssQ/T_IqwyIFXmI/AAAAAAAAACA/4QKmS7s_otE/s256/bgGradient.png" class="bk_img"><div class="circle" id="circle"></div>
+                </div>
+                <div id="out_color" class="out_color" tabindex="0"></div>
+            </div>
+        </aside>
+    <img type="Blob" src="" id="cursor">
+</body>
+</html>
